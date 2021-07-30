@@ -1,0 +1,56 @@
+      /* CSS GRIDS  and flex-boxes */
+
+      /* flex-box */
+      .container{
+          background-color:olive;
+          margin:30px;
+          height:300px;
+          display: flex;
+          flex-direction: row;
+          flex-wrap:wrap;
+          justify-content: space-between;
+          align-items:center;
+      }
+      .container-item{
+          background:lightskyblue;
+          color:cornsilk;
+          font: size 25px;
+          text-align: center;
+
+          width:70px;
+          line-height: 50px;
+          margin:10px;
+      }
+ 
+      .grid-container{
+          background-color:gainsboro;
+          padding:20px;
+          height: 400px;
+
+          display:grid;
+          /* grid-template-columns: 50px 50px 100px 100px;
+          grid-template-rows: 60px 250px; */
+          grid-template-columns: auto auto auto;
+          grid-column-gap: 200px;
+
+
+
+          grid-template-rows: auto auto ;
+          grid-row-gap: 150px;
+          /* justify-content: center; */
+          /* justify-content: end; */
+          /* justify-content: space-evenly; */
+          /* align-content: center; */
+          /* align-content: space-between; */
+          /* align-content: space-around; */
+
+      }
+      .grid-item{
+        font-size:25px;
+        text-align: center;
+
+          width:70px;
+          margin:10px;
+          line-height :50px;
+          
+      }
