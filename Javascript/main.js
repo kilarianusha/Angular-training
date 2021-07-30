@@ -100,6 +100,9 @@ console.log(person)
 
 console.log(`Hi my name is ${person.firstname} ${person.lastname}
 I work as ${person.designation} . 
-My two favourite colors are ${person.fav_colors[0]} & ${person.fav_colors[1]}.
+My most favourite colors are ${person.fav_colors[0]} & ${person.fav_colors[1]}.
 I live in ${person.address.state} , ${person.address.country}`);
+
+
+ 
 
