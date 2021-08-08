@@ -1,0 +1,23 @@
+<div class="conatiner">
+    <div class="row">
+        <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-sm-offset-2" style="margin-top: 20px;">
+            <input type="text" #serverName placeholder="ServerName...">
+            <span style="margin-right: 10px;"></span>
+            <button class="btn btn-primary" (click)="onAddServer(serverName.value)">Add Server</button>
+            <br> <br>
+            <button class="btn btn-success" (click)="onSave()">Post Data</button>
+            <span style="margin-right: 10px;"></span>
+            <button class="btn btn-warning" (click)="getGithubUsers()">Get GitHub Users</button>
+            <hr>
+            <ul class="list-group" *ngFor="let server of servers">
+                <li class="list-group-item">{{ server.name }}  {{ server.id }}</li>
+            </ul>
+
+            <hr>
+            <p class="lead"></p>
+            <ul *ngFor="let data of capturedData">
+                <li class="list-group-item">Username is: <b>{{ data.login }}</b></li>
+            </ul>
+        </div>
+    </div>
+</div>
