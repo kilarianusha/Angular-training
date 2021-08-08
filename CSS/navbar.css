@@ -1,0 +1,38 @@
+body{
+    margin:0;
+    padding: 0;
+    background-color: paleturquoise;
+}
+li,a{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:500;
+    font-size: 16px;
+    color:palevioletred;
+    text-decoration: none;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px,10px;
+}
+.logo{
+    height: 100px;
+}
+.nav-links{
+    list-style: none;
+}
+.nav-links li {
+    display: inline-block;
+   padding: 20px 20px;
+
+
+}
+.nav-links li a:hover{
+    color:gray;
+}
+button{
+    padding: 10px 25px;
+    background-color: blue;
+    color:white;
+}
